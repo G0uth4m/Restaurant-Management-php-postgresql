@@ -14,6 +14,7 @@ postgres=# \i RestMan.sql
 postgres=# \i InsertRestMan.sql
 postgres=# \i log.sql
 ```
+Create new user
 
 Change the database username and password in db.php and database_connection.php
 
