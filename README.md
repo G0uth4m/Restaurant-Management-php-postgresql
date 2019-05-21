@@ -18,6 +18,12 @@ Create new user and grant privileges to the databases(log and restaurant)
 
 Change the database username and password in db.php and database_connection.php
 
+#### Default credentials - 
+
+email : john_smith@gmail.com
+
+password : password
+
 ## Frameworks used :
 * **Bootstrap CDN**
 
