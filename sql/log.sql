@@ -11,4 +11,4 @@ CREATE TABLE user_details (
     user_type varchar(20)
 );
 
-INSERT INTO user_details VALUES('john_smith@gmail.com', '$2y$10$cHpf3TzonURXDENRiRF0de1ycSfnM4NJ27sdwyUCf5L.sewDlkCBe', 'John', 'master');
+INSERT INTO user_details VALUES('example@example.com', '$2y$10$cHpf3TzonURXDENRiRF0de1ycSfnM4NJ27sdwyUCf5L.sewDlkCBe', 'John', 'master');
