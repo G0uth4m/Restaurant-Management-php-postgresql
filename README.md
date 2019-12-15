@@ -20,9 +20,9 @@ Change the database username and password in db.php and database_connection.php
 
 #### Default credentials - 
 
-email : john_smith@gmail.com
+email : ```example@example.com```
 
-password : password
+password : ```password```
 
 ## Frameworks used :
 * **Bootstrap CDN**
