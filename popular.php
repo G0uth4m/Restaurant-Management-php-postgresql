@@ -34,7 +34,7 @@ $populars = $statement->fetchAll(PDO::FETCH_OBJ);
     	<h2>Food Ranking (Top 3)</h2><br>
     	<ol type="1" id="custom">
     <?php foreach($populars as $pop): ?>
-       <li><h4><?= $pop->favourite; ?>&nbsp;(<?= $pop->cnt; ?>&nbsp;likes)</h4></li>
+       <li><h4><?= htmlspecialchars($pop->favourite); ?>&nbsp;(<?= $pop->cnt; ?>&nbsp;likes)</h4></li>
 
     <?php endforeach; ?>
     </ol>

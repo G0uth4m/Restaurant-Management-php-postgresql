@@ -49,7 +49,7 @@ $busboys = $statement5->fetchAll(PDO::FETCH_OBJ);
     	<h2>Managers</h2>
     	<ul class="list-unstyled">
     <?php foreach($managers as $manager): ?>
-       <li><h4><?= $manager->name; ?></h4></li>
+       <li><h4><?= htmlspecialchars($manager->Name); ?></h4></li>
 
     <?php endforeach; ?>
     </ul>
@@ -59,7 +59,7 @@ $busboys = $statement5->fetchAll(PDO::FETCH_OBJ);
     	<h2>Chefs</h2>
     	<ul class="list-unstyled">
     <?php foreach($chefs as $chef): ?>
-       <li><h4><?= $chef->name; ?></h4></li>
+       <li><h4><?= htmlspecialchars($chef->Name); ?></h4></li>
     <?php endforeach; ?>
     </ul>
     <hr>
@@ -68,7 +68,7 @@ $busboys = $statement5->fetchAll(PDO::FETCH_OBJ);
 	<h2>Cashiers</h2>
 	<ul class="list-unstyled">
     <?php foreach($cashiers as $cashier): ?>
-       <li><h4><?= $cashier->name; ?></h4></li>
+       <li><h4><?= htmlspecialchars($cashier->Name); ?></h4></li>
     <?php endforeach; ?>
     </ul>
     <hr>
@@ -77,7 +77,7 @@ $busboys = $statement5->fetchAll(PDO::FETCH_OBJ);
     	<h2>Waiters</h2>
     	<ul class="list-unstyled">
     <?php foreach($waiters as $waiter): ?>
-       <li><h4><?= $waiter->name; ?></h4></li>
+       <li><h4><?= htmlspecialchars($waiter->Name); ?></h4></li>
     <?php endforeach; ?>
     </ul>
     <hr>
@@ -86,7 +86,7 @@ $busboys = $statement5->fetchAll(PDO::FETCH_OBJ);
 		<h2>Busboys</h2>
 		<ul class="list-unstyled">
     <?php foreach($busboys as $busboy): ?>
-       <li><h4><?= $busboy->name; ?></h4></li>
+       <li><h4><?= htmlspecialchars($busboy->Name); ?></h4></li>
     <?php endforeach; ?>
     </ul>
 </div>

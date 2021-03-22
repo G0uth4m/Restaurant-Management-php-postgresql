@@ -31,8 +31,8 @@ $menu = $statement->fetchAll(PDO::FETCH_OBJ);
         </tr>
         <?php foreach($menu as $item): ?>
           <tr>
-            <td><?= $item->name; ?></td>
-            <td><?= $item->nooforders; ?></td>
+            <td><?= htmlspecialchars($item->Name); ?></td>
+            <td><?= htmlspecialchars($item->NoOfOrders); ?></td>
             
           </tr>
         <?php endforeach; ?>

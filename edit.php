@@ -38,11 +38,11 @@ if (isset ($_POST['name'])  && isset($_POST['price']) ) {
       <form method="post">
         <div class="form-group">
           <label for="name">Name</label>
-          <input value="<?= $item->name; ?>" type="text" name="name" dishid="name" class="form-control">
+          <input value="<?= htmlspecialchars($item->Name); ?>" type="text" name="name" dishid="name" class="form-control">
         </div>
         <div class="form-group">
           <label for="price">price</label>
-          <input type="price" value="<?= $item->price; ?>" name="price" dishid="price" class="form-control">
+          <input type="price" value="<?= htmlspecialchars($item->Price); ?>" name="price" dishid="price" class="form-control">
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-info">Confirm</button>

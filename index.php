@@ -32,12 +32,12 @@ $menu = $statement->fetchAll(PDO::FETCH_OBJ);
         </tr>
         <?php foreach($menu as $item): ?>
           <tr>
-            <td><?= $item->dishid; ?></td>
-            <td><?= $item->name; ?></td>
-            <td><?= $item->price; ?></td>
+            <td><?= $item->DishId; ?></td>
+            <td><?= htmlspecialchars($item->Name); ?></td>
+            <td><?= htmlspecialchars($item->Price); ?></td>
             <td>
-            <a href="delete.php?dishid=<?= $item->dishid ?>" class="btn btn-danger">Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <a href="edit.php?dishid=<?= $item->dishid ?>" class="btn btn-success">Edit price</a></td>
+            <a href="delete.php?dishid=<?= $item->DishId ?>" class="btn btn-danger">Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="edit.php?dishid=<?= $item->DishId ?>" class="btn btn-success">Edit price</a></td>
           </tr>
         <?php endforeach; ?>
       </table>
