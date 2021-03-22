@@ -63,7 +63,7 @@ if (isset ($_POST['name'])  && isset($_POST['email'])  && isset($_POST['favourit
   <select class="form-control" id="favourite" name="favourite">
 
         <?php foreach($menu as $item): ?>
-          <option><?= $item->name; ?></option>
+          <option><?= htmlspecialchars($item->Name); ?></option>
         <?php endforeach; ?>
     
   </select>

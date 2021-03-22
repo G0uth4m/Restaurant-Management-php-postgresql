@@ -29,7 +29,7 @@ $restaurants = $statement->fetchAll(PDO::FETCH_OBJ);
             <ul class="list-unstyled">
               <?php foreach($restaurants as $restaurant): ?>
               <li>
-                <a href="https://google.com/maps/" class="list-group-item text-dark"><?= $restaurant->address; ?></a>
+                <a href="https://google.com/maps/" class="list-group-item text-dark"><?= htmlspecialchars($restaurant->Address); ?></a>
               </li>
               <?php endforeach; ?>            
             </ul>

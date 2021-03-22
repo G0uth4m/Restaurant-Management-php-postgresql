@@ -29,7 +29,7 @@ $menu = $statement->fetchAll(PDO::FETCH_OBJ);
         </tr>
         <?php foreach($menu as $item): ?>
           <tr>
-            <td><?= $item->name; ?></td>
+            <td><?= htmlspecialchars($item->Name); ?></td>
             
           </tr>
         <?php endforeach; ?>
